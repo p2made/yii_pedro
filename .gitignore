@@ -1,5 +1,12 @@
-# Exclude macOS .DS_Store files
+# Ignore hidden Mac system files
 .DS_Store
+**/.DS_Store
+._*
+**/._*
 
-# Exclude any folders named 'z_gitignore' anywhere in the project
+# The docs/ folder contains confidential information
+docs/
+
+# Ignore z_gitignore folders at any level
+z_gitignore/
 **/z_gitignore/
