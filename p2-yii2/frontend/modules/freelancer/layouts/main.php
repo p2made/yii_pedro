@@ -1,10 +1,10 @@
 <?php
 /**
- * @themes/freelancer/layouts/main.php
+ * @frontend/modules/freelancer/layouts/main.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
- * @link https://steppewest.com/
+ * @link https://pedro.id.au/
  * @license MIT
  */
 

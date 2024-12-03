@@ -1,4 +1,12 @@
 <?php
+/**
+ * @frontend/modules/controllers/P2FreelancerController.php
+ *
+ * @author Pedro Plowman
+ * @copyright Copyright (c) 2024 Pedro Plowman
+ * @link https://pedro.id.au/
+ * @license MIT
+ */
 
 namespace frontend\modules\controllers;
 

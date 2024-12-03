@@ -9,19 +9,19 @@
  */
 
 /**
- * @class \app\assets\P2MadeMetaAsset
+ * @class \common\assets\P2MadeMetaAsset
  *
  * Load this asset with...
- * app\assets\P2MadeMetaAsset::register($this);
+ * common\assets\P2MadeMetaAsset::register($this);
  *
- * use app\assets\P2MadeMetaAsset;
+ * use common\assets\P2MadeMetaAsset;
  * P2MadeMetaAsset::register($this);
  *
  * or specify as a dependency with...
- *     'app\assets\P2MadeMetaAsset',
+ *     'common\assets\P2MadeMetaAsset',
  */
 
-namespace app\assets;
+namespace common\assets;
 
 use yii\web\AssetBundle;
 
@@ -33,11 +33,11 @@ use yii\web\AssetBundle;
  */
 class P2MadeMetaAsset extends AssetBundle
 {
-	public $sourcePath = '@app/static/p2meta';
+	public $sourcePath = '@app/static/p2-meta';
 
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap5\BootstrapAsset',
-		'app\assets\P2BootstrapIconsAsset',
+		'common\assets\P2BootstrapIconsAsset',
 	];
 }

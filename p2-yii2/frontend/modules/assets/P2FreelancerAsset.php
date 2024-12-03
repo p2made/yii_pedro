@@ -1,31 +1,31 @@
 <?php
 /**
- * @themes/freelancer/assets/P2FreelancerAsset.php
+ * @frontend/modules/freelancer/assets/P2FreelancerAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
- * @link https://steppewest.com/
+ * @link https://pedro.id.au/
  * @license MIT
  */
 
 /**
- * @class \themes\freelancer\assets\P2FreelancerAsset
+ * @class \frontend\modules\freelancer\assets\P2FreelancerAsset
  *
  * Load this asset with...
- * themes\freelancer\assets\P2FreelancerAsset::register($this);
+ * frontend\modules\freelancer\assets\P2FreelancerAsset::register($this);
  *
- * use themes\freelancer\assets\P2FreelancerAsset;
+ * use frontend\modules\freelancer\assets\P2FreelancerAsset;
  * P2FreelancerAsset::register($this);
  *
  * or specify as a dependency with...
- *     'themes\freelancer\assets\P2FreelancerAsset',
+ *     'frontend\modules\freelancer\assets\P2FreelancerAsset',
  */
 
-namespace themes\freelancer\assets;
+namespace frontend\modules\freelancer\assets;
 
 class P2FreelancerAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@themes/freelancer/assets/lib';
+	public $sourcePath = '@static/freelancer';
 
 	public $css = [
 		'css/freelancer.min.css',
@@ -44,6 +44,6 @@ class P2FreelancerAsset extends \yii\web\AssetBundle
 	];
 
 	public $depends = [
-		//'common\assets\SwMetaAsset',
+		'common\assets\P2MadeMetaAsset',
 	];
 }
