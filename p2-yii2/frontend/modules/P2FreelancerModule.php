@@ -7,18 +7,18 @@ namespace frontend\modules;
  */
 class P2FreelancerModule extends \yii\base\Module
 {
-    /**
-     * {@inheritdoc}
-     */
-    public $controllerNamespace = 'frontend\modules\controllers';
+	/**
+	 * {@inheritdoc}
+	 */
+	public $controllerNamespace = 'frontend\modules\controllers';
 
-    /**
-     * {@inheritdoc}
-     */
-    public function init()
-    {
-        parent::init();
+	/**
+	 * {@inheritdoc}
+	 */
+	public function init()
+	{
+		parent::init();
 
-        // custom initialization code goes here
-    }
+		// custom initialization code goes here
+	}
 }
