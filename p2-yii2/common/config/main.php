@@ -1,4 +1,7 @@
 <?php
+/**
+ * app/common/config/main.php
+ */
 return [
 	'charset' => 'utf-8',
 	'aliases' => [

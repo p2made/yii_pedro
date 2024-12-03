@@ -1,4 +1,8 @@
 <?php
+/**
+ * app/frontend/config/main.php
+ */
+
 $params = array_merge(
 	require __DIR__ . '/../../common/config/params.php',
 	require __DIR__ . '/../../common/config/params-local.php',
@@ -8,10 +12,24 @@ $params = array_merge(
 
 return [
 	'id' => 'app-frontend',
+	'name' => 'Pedro.id.au', // Set the application name here
 	'basePath' => dirname(__DIR__),
 	'bootstrap' => ['log'],
 	'controllerNamespace' => 'frontend\controllers',
 	'components' => [
+		/**
+		'urlManager' => [
+			'rules' => [
+			],
+		],
+		'view' => [
+			'theme' => [
+				'pathMap' => [
+					'@app/views' => '@app/views/letter'
+				],
+			],
+		],
+		 */
 		'request' => [
 			'csrfParam' => '_csrf-frontend',
 		],
@@ -22,7 +40,7 @@ return [
 		],
 		'session' => [
 			// this is the name of the session cookie used for login on the frontend
-			'name' => 'advanced-frontend',
+			'name' => 'Pedro.id.au-frontend',
 		],
 		'log' => [
 			'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -37,5 +55,9 @@ return [
 			'errorAction' => 'site/error',
 		],
 	],
+	/**
+	'modules' => [
+	],
+	 */
 	'params' => $params,
 ];
