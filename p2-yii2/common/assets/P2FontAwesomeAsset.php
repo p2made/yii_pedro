@@ -28,11 +28,12 @@ use yii\web\AssetBundle;
 class P2FontAwesomeAsset extends AssetBundle
 {
 	public $sourcePath = null;
-	public $baseUrl = '//kit.fontawesome.com/';
+	public $baseUrl = '//use.fontawesome.com/releases/v6.3.0/';
 	public $js = [
-		'820f855cc1.js',
+		'js/all.js',
 	];
 	public $cssOptions = [
+		'integrity' => 'sha384-QM3vQ1ro1SUguF26PKxC17ZxibTi/ixpgL9NRL5/RHw1AmA0pfSeGCh6k+uqbyzJ',
 		'crossorigin' => 'anonymous',
 	];
 }

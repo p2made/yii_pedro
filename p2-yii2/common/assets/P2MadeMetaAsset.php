@@ -23,17 +23,9 @@
 
 namespace common\assets;
 
-use yii\web\AssetBundle;
-
-/**
- * Main application asset bundle.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
- */
-class P2MadeMetaAsset extends AssetBundle
+class P2MadeMetaAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@app/static/p2-meta';
+	public $sourcePath = '@static/p2-meta';
 
 	public $depends = [
 		'yii\web\YiiAsset',

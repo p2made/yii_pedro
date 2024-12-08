@@ -84,15 +84,11 @@ frontend\controllers\LanguageLinksController
 ```
 
 ```
-app\modules\P2FreelancerModule
-sw-language
-frontend\modules\controllers\LanguageController
-frontend\modules\LetterModule
-sw-letter
-frontend\modules\controllers\LetterController
-frontend\modules\LinksModule
-sw-links
-frontend\modules\controllers\LinksController
+frontend\modules\P2FreelancerModule
+frontend\modules\FirstTestModule
+frontend\modules\NextTestModule
+app\modules\FirstTestModule
+app\modules\NextTestModule
 ```
 
 

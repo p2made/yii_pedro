@@ -4,6 +4,7 @@
  */
 return [
 	'charset' => 'utf-8',
+	'language' => 'en_AU',
 	'aliases' => [
 		'@bower' => '@vendor/bower-asset',
 		'@npm'   => '@vendor/npm-asset',
