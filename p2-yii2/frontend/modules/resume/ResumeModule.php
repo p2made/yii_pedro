@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerModule.php
+ * ResumeModule.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -8,17 +8,17 @@
  * @license MIT
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\resume;
 
 /**
- * freelancer module definition class
+ * resume module definition class
  */
-class FreelancerModule extends \yii\base\Module
+class ResumeModule extends \yii\base\Module
 {
 	/**
 	 * {@inheritdoc}
 	 */
-	public $controllerNamespace = 'frontend\modules\freelancer';
+	public $controllerNamespace = 'frontend\modules\resume';
 
 	/**
 	 * {@inheritdoc}

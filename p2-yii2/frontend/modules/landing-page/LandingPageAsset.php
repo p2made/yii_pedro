@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerAsset.php
+ * LandingPageAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -9,43 +9,44 @@
  */
 
 /**
- * @class \frontend\modules\freelancer\FreelancerAsset
+ * @class \frontend\modules\landing-page\LandingPageAsset
  *
  * Load this asset with...
- * frontend\modules\freelancer\FreelancerAsset::register($this);
+ * frontend\modules\landing-page\LandingPageAsset::register($this);
  *
- * use frontend\modules\freelancer\FreelancerAsset;
- * FreelancerAsset::register($this);
+ * use frontend\modules\landing-page\LandingPageAsset;
+ * LandingPageAsset::register($this);
  *
  * or specify as a dependency with...
- *     'frontend\modules\freelancer\FreelancerAsset',
+ *     'frontend\modules\landing-page\LandingPageAsset',
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\landing-page;
 
-class FreelancerAsset extends \yii\web\AssetBundle
+class LandingPageAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@frontend/modules/freelancer/lib';
+	public $sourcePath = '@frontend/modules/landing-page/lib';
 
 	public $css = [
-		'css/freelancer.min.css',
+		'css/landing-page.min.css',
 	];
 
 	public $cssOptions = [
 		'crossorigin' => 'anonymous',
 	];
 
+	/**
 	public $js = [
-		'js/freelancer.min.js',
+		'js/landing-page.min.js',
 	];
 
 	public $jsOptions = [
 		'crossorigin' => 'anonymous',
 	];
+	 */
 
 	public $depends = [
 		'common\assets\P2MadeMetaAsset',
 		'common\assets\P2FontAwesomeAsset',
-		'frontend\modules\freelancer\FreelancerFontsAsset',
 	];
 }

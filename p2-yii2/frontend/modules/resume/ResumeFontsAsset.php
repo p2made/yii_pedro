@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerFontsAsset.php
+ * ResumeFontsAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -9,28 +9,28 @@
  */
 
 /**
- * @class \frontend\modules\freelancer\FreelancerFontsAsset
+ * @class \frontend\modules\freelancer\ResumeFontsAsset
  *
  * Load this asset with...
- * frontend\modules\freelancer\FreelancerFontsAsset::register($this);
+ * frontend\modules\freelancer\ResumeFontsAsset::register($this);
  *
- * use frontend\modules\freelancer\FreelancerFontsAsset;
- * FreelancerFontsAsset::register($this);
+ * use frontend\modules\freelancer\ResumeFontsAsset;
+ * ResumeFontsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'frontend\modules\freelancer\FreelancerFontsAsset',
+ *     'frontend\modules\freelancer\ResumeFontsAsset',
  */
 
 namespace frontend\modules\freelancer;
 
-class FreelancerFontsAsset extends \yii\web\AssetBundle
+class ResumeFontsAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = null;
 	public $baseUrl = '//fonts.googleapis.com';
 
 	public $css = [
-		'css?family=Montserrat:400,700',
-		'css?family=Lato:400,700,400italic,700italic',
+		'css?family=Saira+Extra+Condensed:500,700',
+		'css?family=Muli:400,400i,800,800i',
 	];
 
 	public $cssOptions = [

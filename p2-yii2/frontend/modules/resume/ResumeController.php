@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerController.php
+ * ResumeController.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -8,18 +8,18 @@
  * @license MIT
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\resume;
 
 use Yii;
 use yii\base\Theme;
 use yii\helpers\Html;
 use common\assets\P2MadeMetaAsset;
-use frontend\modules\freelancer\FreelancerAsset;
+use frontend\modules\resume\ResumeAsset;
 
 /**
- * Default controller for the `freelancer` module
+ * Default controller for the `resume` module
  */
-class FreelancerController extends \yii\web\Controller
+class ResumeController extends \yii\web\Controller
 {
 	public function init()
 	{
@@ -28,14 +28,14 @@ class FreelancerController extends \yii\web\Controller
 		// Set a more specific path map for the theme
 		Yii::$app->view->theme = new Theme([
 			'pathMap' => [
-				//'@app/views/layouts' => '@frontend/modules/freelancer/views/layouts',
-				'@app/views/layouts' => '@app/modules/freelancer/views/layouts',
+				//'@app/views/layouts' => '@frontend/modules/resume/views/layouts',
+				'@app/views/layouts' => '@app/modules/resume/views/layouts',
 			],
 		]);
 
 		// Specify the layout explicitly for this controller
-		//$this->layout = '@frontend/modules/freelancer/views/layouts/main';
-		$this->layout = '@app/modules/freelancer/views/layouts/main';
+		//$this->layout = '@frontend/modules/resume/views/layouts/main';
+		$this->layout = '@app/modules/resume/views/layouts/main';
 	}
 
 	/**
@@ -44,11 +44,11 @@ class FreelancerController extends \yii\web\Controller
 	 */
 	public function actionView()
 	{
-		$themeName = 'Freelancer';
+		$themeName = 'Resume';
 
 		// Register the assets and get the base URLs
 		$metaAsset = P2MadeMetaAsset::register($this->view);
-		$pageAsset = FreelancerAsset::register($this->view);
+		$pageAsset = ResumeAsset::register($this->view);
 
 		$this->view->params['canonicalUrl'] = rtrim(Yii::$app->homeUrl, '/') . '/';
 		$this->view->params['title'] = Yii::$app->name . ' - ' . $themeName;
@@ -70,8 +70,8 @@ $metaAssetUrl = $this->params['metaAssetUrl'];
 $pageAssetUrl = $this->params['pageAssetUrl'];
 		 */
 
-		// Render the specific view for freelancer
-		return $this->render('@frontend/modules/freelancer/views/site/index', [
+		// Render the specific view for resume
+		return $this->render('@frontend/modules/resume/views/site/index', [
 			'canonicalUrl' => rtrim(Yii::$app->homeUrl, '/') . '/',
 			'title' => Yii::$app->name,
 			'keywords' => Yii::$app->params['keywords'],
@@ -84,32 +84,3 @@ $pageAssetUrl = $this->params['pageAssetUrl'];
 		]);
 	}
 }
-
-/**
-\frontend\modules\freelancer\
-\frontend\modules\freelancer\FreelancerAsset.php
-\frontend\modules\freelancer\FreelancerController.php
-\frontend\modules\freelancer\FreelancerModule.php
-
-/frontend/modules/freelancer/
-/frontend/modules/freelancer/FreelancerAsset.php
-/frontend/modules/freelancer/FreelancerController.php
-/frontend/modules/freelancer/FreelancerModule.php
-/frontend/modules/freelancer/lib/
-/frontend/modules/freelancer/lib/css/
-/frontend/modules/freelancer/lib/img/
-/frontend/modules/freelancer/lib/js/
-/frontend/modules/freelancer/views/
-/frontend/modules/freelancer/views/index.php
-/frontend/modules/freelancer/views/layouts/
-/frontend/modules/freelancer/views/layouts/main.php
-/frontend/modules/freelancer/views/site/
-/frontend/modules/freelancer/views/site/about.php
-/frontend/modules/freelancer/views/site/contact.php
-/frontend/modules/freelancer/views/site/error.php
-/frontend/modules/freelancer/views/site/index.php
-/frontend/modules/freelancer/views/site/login.php
- */
-
-/*
- */

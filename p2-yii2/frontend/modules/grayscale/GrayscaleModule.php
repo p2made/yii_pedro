@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerModule.php
+ * GrayscaleModule.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -8,17 +8,17 @@
  * @license MIT
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\grayscale;
 
 /**
- * freelancer module definition class
+ * grayscale module definition class
  */
-class FreelancerModule extends \yii\base\Module
+class GrayscaleModule extends \yii\base\Module
 {
 	/**
 	 * {@inheritdoc}
 	 */
-	public $controllerNamespace = 'frontend\modules\freelancer';
+	public $controllerNamespace = 'frontend\modules\grayscale';
 
 	/**
 	 * {@inheritdoc}

@@ -42,7 +42,7 @@ $portfolioImages = [
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#<?= Html::encode($modalId) ?>">
 						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
 							<div class="portfolio-item-caption-content text-center text-white">
-								<i class="bi bi-plus-lg bi-large"></i>
+								<i class="bi bi-plus-lg bi-large bi-3x"></i>
 							</div>
 						</div>
 						<?= Html::img($imageSrc, [

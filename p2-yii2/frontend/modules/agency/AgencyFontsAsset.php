@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerFontsAsset.php
+ * AgencyFontsAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -9,28 +9,28 @@
  */
 
 /**
- * @class \frontend\modules\freelancer\FreelancerFontsAsset
+ * @class \frontend\modules\freelancer\AgencyFontsAsset
  *
  * Load this asset with...
- * frontend\modules\freelancer\FreelancerFontsAsset::register($this);
+ * frontend\modules\freelancer\AgencyFontsAsset::register($this);
  *
- * use frontend\modules\freelancer\FreelancerFontsAsset;
- * FreelancerFontsAsset::register($this);
+ * use frontend\modules\freelancer\AgencyFontsAsset;
+ * AgencyFontsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'frontend\modules\freelancer\FreelancerFontsAsset',
+ *     'frontend\modules\freelancer\AgencyFontsAsset',
  */
 
 namespace frontend\modules\freelancer;
 
-class FreelancerFontsAsset extends \yii\web\AssetBundle
+class AgencyFontsAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = null;
 	public $baseUrl = '//fonts.googleapis.com';
 
 	public $css = [
 		'css?family=Montserrat:400,700',
-		'css?family=Lato:400,700,400italic,700italic',
+		'css?family=Roboto+Slab:400,100,300,700',
 	];
 
 	public $cssOptions = [

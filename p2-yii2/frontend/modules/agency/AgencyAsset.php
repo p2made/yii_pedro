@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerAsset.php
+ * AgencyAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -9,26 +9,26 @@
  */
 
 /**
- * @class \frontend\modules\freelancer\FreelancerAsset
+ * @class \frontend\modules\agency\AgencyAsset
  *
  * Load this asset with...
- * frontend\modules\freelancer\FreelancerAsset::register($this);
+ * frontend\modules\agency\AgencyAsset::register($this);
  *
- * use frontend\modules\freelancer\FreelancerAsset;
- * FreelancerAsset::register($this);
+ * use frontend\modules\agency\AgencyAsset;
+ * AgencyAsset::register($this);
  *
  * or specify as a dependency with...
- *     'frontend\modules\freelancer\FreelancerAsset',
+ *     'frontend\modules\agency\AgencyAsset',
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\agency;
 
-class FreelancerAsset extends \yii\web\AssetBundle
+class AgencyAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@frontend/modules/freelancer/lib';
+	public $sourcePath = '@frontend/modules/agency/lib';
 
 	public $css = [
-		'css/freelancer.min.css',
+		'css/agency.min.css',
 	];
 
 	public $cssOptions = [
@@ -36,7 +36,7 @@ class FreelancerAsset extends \yii\web\AssetBundle
 	];
 
 	public $js = [
-		'js/freelancer.min.js',
+		'js/agency.min.js',
 	];
 
 	public $jsOptions = [
@@ -46,6 +46,6 @@ class FreelancerAsset extends \yii\web\AssetBundle
 	public $depends = [
 		'common\assets\P2MadeMetaAsset',
 		'common\assets\P2FontAwesomeAsset',
-		'frontend\modules\freelancer\FreelancerFontsAsset',
+		//'frontend\modules\agency\FreelancerFontsAsset',
 	];
 }

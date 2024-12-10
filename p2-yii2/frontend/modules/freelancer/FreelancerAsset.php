@@ -45,7 +45,6 @@ class FreelancerAsset extends \yii\web\AssetBundle
 
 	public $depends = [
 		'common\assets\P2MadeMetaAsset',
-		'common\assets\P2FontAwesomeAsset',
 		'frontend\modules\freelancer\FreelancerFontsAsset',
 	];
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerModule.php
+ * OnePageWonderModule.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -8,17 +8,17 @@
  * @license MIT
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\one-page-wonder;
 
 /**
- * freelancer module definition class
+ * one-page-wonder module definition class
  */
-class FreelancerModule extends \yii\base\Module
+class OnePageWonderModule extends \yii\base\Module
 {
 	/**
 	 * {@inheritdoc}
 	 */
-	public $controllerNamespace = 'frontend\modules\freelancer';
+	public $controllerNamespace = 'frontend\modules\one-page-wonder';
 
 	/**
 	 * {@inheritdoc}

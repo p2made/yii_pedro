@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerAsset.php
+ * ResumeAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -9,26 +9,26 @@
  */
 
 /**
- * @class \frontend\modules\freelancer\FreelancerAsset
+ * @class \frontend\modules\resume\ResumeAsset
  *
  * Load this asset with...
- * frontend\modules\freelancer\FreelancerAsset::register($this);
+ * frontend\modules\resume\ResumeAsset::register($this);
  *
- * use frontend\modules\freelancer\FreelancerAsset;
- * FreelancerAsset::register($this);
+ * use frontend\modules\resume\ResumeAsset;
+ * ResumeAsset::register($this);
  *
  * or specify as a dependency with...
- *     'frontend\modules\freelancer\FreelancerAsset',
+ *     'frontend\modules\resume\ResumeAsset',
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\resume;
 
-class FreelancerAsset extends \yii\web\AssetBundle
+class ResumeAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@frontend/modules/freelancer/lib';
+	public $sourcePath = '@frontend/modules/resume/lib';
 
 	public $css = [
-		'css/freelancer.min.css',
+		'css/resume.min.css',
 	];
 
 	public $cssOptions = [
@@ -36,7 +36,7 @@ class FreelancerAsset extends \yii\web\AssetBundle
 	];
 
 	public $js = [
-		'js/freelancer.min.js',
+		'js/resume.min.js',
 	];
 
 	public $jsOptions = [
@@ -46,6 +46,5 @@ class FreelancerAsset extends \yii\web\AssetBundle
 	public $depends = [
 		'common\assets\P2MadeMetaAsset',
 		'common\assets\P2FontAwesomeAsset',
-		'frontend\modules\freelancer\FreelancerFontsAsset',
 	];
 }

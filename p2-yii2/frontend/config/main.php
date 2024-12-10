@@ -50,34 +50,26 @@ return [
 		'freelancer' => [
 			 'class' => 'frontend\modules\freelancer\FreelancerModule',
 		],
+		'agency' => [
+			 'class' => 'frontend\modules\agency\AgencyModule',
+		],
+		'grayscale' => [
+			 'class' => 'frontend\modules\grayscale\GrayscaleModule',
+		],
+		'landing-page' => [
+			 'class' => 'frontend\modules\landing-page\LandingPageModule',
+		],
+		'one-page-wonder' => [
+			 'class' => 'frontend\modules\one-page-wonder\OnePageWonderModule',
+		],
+		'resume' => [
+			 'class' => 'frontend\modules\resume\ResumeModule',
+		],
 	],
 	'params' => $params,
 ];
 
 /**
-frontend/modules/freelancer/lib/css/freelancer.css
-frontend/modules/freelancer/lib/css/freelancer.min.css
-frontend/modules/freelancer/lib/img/avataaars.svg
-frontend/modules/freelancer/lib/img/portfolio/
-frontend/modules/freelancer/lib/img/portfolio/cabin.png
-frontend/modules/freelancer/lib/img/portfolio/cake.png
-frontend/modules/freelancer/lib/img/portfolio/circus.png
-frontend/modules/freelancer/lib/img/portfolio/game.png
-frontend/modules/freelancer/lib/img/portfolio/safe.png
-frontend/modules/freelancer/lib/img/portfolio/submarine.png
-frontend/modules/freelancer/lib/js/freelancer.js
-frontend/modules/freelancer/lib/js/freelancer.min.js
-frontend/modules/freelancer/FreelancerAsset.php
-frontend/modules/freelancer/FreelancerController.php
-frontend/modules/freelancer/FreelancerModule.php
-frontend/modules/freelancer/views/index.php
-frontend/modules/freelancer/views/layouts/
-frontend/modules/freelancer/views/layouts/main.php
-frontend/modules/freelancer/views/site/about.php
-frontend/modules/freelancer/views/site/contact.php
-frontend/modules/freelancer/views/site/error.php
-frontend/modules/freelancer/views/site/index.php
-frontend/modules/freelancer/views/site/login.php
  */
 
 		/**

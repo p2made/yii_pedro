@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerController.php
+ * OnePageWonderController.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -8,18 +8,18 @@
  * @license MIT
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\one-page-wonder;
 
 use Yii;
 use yii\base\Theme;
 use yii\helpers\Html;
 use common\assets\P2MadeMetaAsset;
-use frontend\modules\freelancer\FreelancerAsset;
+use frontend\modules\one-page-wonder\OnePageWonderAsset;
 
 /**
- * Default controller for the `freelancer` module
+ * Default controller for the `one-page-wonder` module
  */
-class FreelancerController extends \yii\web\Controller
+class OnePageWonderController extends \yii\web\Controller
 {
 	public function init()
 	{
@@ -28,14 +28,14 @@ class FreelancerController extends \yii\web\Controller
 		// Set a more specific path map for the theme
 		Yii::$app->view->theme = new Theme([
 			'pathMap' => [
-				//'@app/views/layouts' => '@frontend/modules/freelancer/views/layouts',
-				'@app/views/layouts' => '@app/modules/freelancer/views/layouts',
+				//'@app/views/layouts' => '@frontend/modules/one-page-wonder/views/layouts',
+				'@app/views/layouts' => '@app/modules/one-page-wonder/views/layouts',
 			],
 		]);
 
 		// Specify the layout explicitly for this controller
-		//$this->layout = '@frontend/modules/freelancer/views/layouts/main';
-		$this->layout = '@app/modules/freelancer/views/layouts/main';
+		//$this->layout = '@frontend/modules/one-page-wonder/views/layouts/main';
+		$this->layout = '@app/modules/one-page-wonder/views/layouts/main';
 	}
 
 	/**
@@ -44,11 +44,11 @@ class FreelancerController extends \yii\web\Controller
 	 */
 	public function actionView()
 	{
-		$themeName = 'Freelancer';
+		$themeName = 'One Page Wonder';
 
 		// Register the assets and get the base URLs
 		$metaAsset = P2MadeMetaAsset::register($this->view);
-		$pageAsset = FreelancerAsset::register($this->view);
+		$pageAsset = OnePageWonderAsset::register($this->view);
 
 		$this->view->params['canonicalUrl'] = rtrim(Yii::$app->homeUrl, '/') . '/';
 		$this->view->params['title'] = Yii::$app->name . ' - ' . $themeName;
@@ -70,8 +70,8 @@ $metaAssetUrl = $this->params['metaAssetUrl'];
 $pageAssetUrl = $this->params['pageAssetUrl'];
 		 */
 
-		// Render the specific view for freelancer
-		return $this->render('@frontend/modules/freelancer/views/site/index', [
+		// Render the specific view for one-page-wonder
+		return $this->render('@frontend/modules/one-page-wonder/views/site/index', [
 			'canonicalUrl' => rtrim(Yii::$app->homeUrl, '/') . '/',
 			'title' => Yii::$app->name,
 			'keywords' => Yii::$app->params['keywords'],
@@ -84,32 +84,3 @@ $pageAssetUrl = $this->params['pageAssetUrl'];
 		]);
 	}
 }
-
-/**
-\frontend\modules\freelancer\
-\frontend\modules\freelancer\FreelancerAsset.php
-\frontend\modules\freelancer\FreelancerController.php
-\frontend\modules\freelancer\FreelancerModule.php
-
-/frontend/modules/freelancer/
-/frontend/modules/freelancer/FreelancerAsset.php
-/frontend/modules/freelancer/FreelancerController.php
-/frontend/modules/freelancer/FreelancerModule.php
-/frontend/modules/freelancer/lib/
-/frontend/modules/freelancer/lib/css/
-/frontend/modules/freelancer/lib/img/
-/frontend/modules/freelancer/lib/js/
-/frontend/modules/freelancer/views/
-/frontend/modules/freelancer/views/index.php
-/frontend/modules/freelancer/views/layouts/
-/frontend/modules/freelancer/views/layouts/main.php
-/frontend/modules/freelancer/views/site/
-/frontend/modules/freelancer/views/site/about.php
-/frontend/modules/freelancer/views/site/contact.php
-/frontend/modules/freelancer/views/site/error.php
-/frontend/modules/freelancer/views/site/index.php
-/frontend/modules/freelancer/views/site/login.php
- */
-
-/*
- */

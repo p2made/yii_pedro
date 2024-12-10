@@ -1,6 +1,6 @@
 <?php
 /**
- * FreelancerAsset.php
+ * GrayscaleAsset.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman
@@ -9,26 +9,26 @@
  */
 
 /**
- * @class \frontend\modules\freelancer\FreelancerAsset
+ * @class \frontend\modules\grayscale\GrayscaleAsset
  *
  * Load this asset with...
- * frontend\modules\freelancer\FreelancerAsset::register($this);
+ * frontend\modules\grayscale\GrayscaleAsset::register($this);
  *
- * use frontend\modules\freelancer\FreelancerAsset;
- * FreelancerAsset::register($this);
+ * use frontend\modules\grayscale\GrayscaleAsset;
+ * GrayscaleAsset::register($this);
  *
  * or specify as a dependency with...
- *     'frontend\modules\freelancer\FreelancerAsset',
+ *     'frontend\modules\grayscale\GrayscaleAsset',
  */
 
-namespace frontend\modules\freelancer;
+namespace frontend\modules\grayscale;
 
-class FreelancerAsset extends \yii\web\AssetBundle
+class GrayscaleAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@frontend/modules/freelancer/lib';
+	public $sourcePath = '@frontend/modules/grayscale/lib';
 
 	public $css = [
-		'css/freelancer.min.css',
+		'css/grayscale.min.css',
 	];
 
 	public $cssOptions = [
@@ -36,7 +36,7 @@ class FreelancerAsset extends \yii\web\AssetBundle
 	];
 
 	public $js = [
-		'js/freelancer.min.js',
+		'js/grayscale.min.js',
 	];
 
 	public $jsOptions = [
@@ -46,6 +46,5 @@ class FreelancerAsset extends \yii\web\AssetBundle
 	public $depends = [
 		'common\assets\P2MadeMetaAsset',
 		'common\assets\P2FontAwesomeAsset',
-		'frontend\modules\freelancer\FreelancerFontsAsset',
 	];
 }
