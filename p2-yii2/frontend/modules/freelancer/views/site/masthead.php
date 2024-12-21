@@ -1,6 +1,6 @@
 <?php
 /**
- * @frontend/modules/freelancer/views/layouts/masthead.php
+ * @frontend/modules/freelancer/views/site/masthead.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman

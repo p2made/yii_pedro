@@ -1,6 +1,6 @@
 <?php
 /**
- * @frontend/modules/letter/layouts/head.php
+ * @frontend/modules/letter/site/head.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Steppe West

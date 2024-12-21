@@ -1,6 +1,6 @@
 <?php
 /**
- * @frontend/modules/freelancer/views/layouts/copyright.php
+ * @frontend/modules/freelancer/views/site/copyright.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman

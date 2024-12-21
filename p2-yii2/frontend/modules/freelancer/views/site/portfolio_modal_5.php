@@ -1,6 +1,6 @@
 <?php
 /**
- * @frontend/modules/freelancer/views/layouts/portfolio_modal_5.php
+ * @frontend/modules/freelancer/views/site/portfolio_modal_5.php
  *
  * @author Pedro Plowman
  * @copyright Copyright (c) 2024 Pedro Plowman

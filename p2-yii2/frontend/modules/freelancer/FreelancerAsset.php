@@ -27,6 +27,7 @@ class FreelancerAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@frontend/modules/freelancer/lib';
 
+	/**
 	public $css = [
 		'css/freelancer.min.css',
 	];
@@ -34,6 +35,7 @@ class FreelancerAsset extends \yii\web\AssetBundle
 	public $cssOptions = [
 		'crossorigin' => 'anonymous',
 	];
+	 */
 
 	public $js = [
 		'js/freelancer.min.js',
@@ -44,7 +46,7 @@ class FreelancerAsset extends \yii\web\AssetBundle
 	];
 
 	public $depends = [
-		'common\assets\P2MadeMetaAsset',
+		'common\assets\P2BootstrapIconsAsset',
 		'frontend\modules\freelancer\FreelancerFontsAsset',
 	];
 }

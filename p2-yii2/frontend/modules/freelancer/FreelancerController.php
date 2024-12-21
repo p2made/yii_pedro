@@ -25,6 +25,14 @@ class FreelancerController extends \yii\web\Controller
 	{
 		parent::init();
 
+		// Replace BootstrapAsset's CSS with your custom CSS
+		Yii::$app->assetManager->bundles['yii\bootstrap5\BootstrapAsset'] = [
+			'sourcePath' => '@frontend/modules/freelancer/lib',
+			'css' => [
+				'css/freelancer.min.css',
+			],
+		];
+
 		// Set a more specific path map for the theme
 		Yii::$app->view->theme = new Theme([
 			'pathMap' => [
@@ -46,42 +54,58 @@ class FreelancerController extends \yii\web\Controller
 	{
 		$themeName = 'Freelancer';
 
-		// Register the assets and get the base URLs
-		$metaAsset = P2MadeMetaAsset::register($this->view);
-		$pageAsset = FreelancerAsset::register($this->view);
-
 		$this->view->params['canonicalUrl'] = rtrim(Yii::$app->homeUrl, '/') . '/';
-		$this->view->params['title'] = Yii::$app->name . ' - ' . $themeName;
+		$this->view->params['title'] = Yii::$app->name;
+		$this->view->params['themeName'] = $themeName;
 		$this->view->params['keywords'] = Yii::$app->params['keywords'];
 		$this->view->params['description'] = Yii::$app->params['description'];
 		$this->view->params['author'] = Yii::$app->params['author'];
 		$this->view->params['updated'] = Yii::$app->params['updated'];
+
+		// Register the assets and get the base URLs
+		$metaAsset = P2MadeMetaAsset::register($this->view);
 		$this->view->params['metaAssetUrl'] = $metaAsset->baseUrl;
+		$pageAsset = FreelancerAsset::register($this->view);
 		$this->view->params['pageAssetUrl'] = $pageAsset->baseUrl;
+
+		// Footer content as variables
+		$this->view->params['footerItems']['location'] = [
+			'title' => 'Location',
+			'address' => '2215 John Daniel Drive<br>Clark, MO 65243',
+		];
+		$this->view->params['footerItems']['about'] = [
+			'title' => 'About Freelancer',
+			'text' => 'Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.',
+		];
+		$this->view->params['footerItems']['socialLinks'] = [
+			['icon' => 'bi-facebook', 'url' => '#', 'label' => 'Facebook'],
+			['icon' => 'bi-twitter', 'url' => '#', 'label' => 'Twitter'],
+			['icon' => 'bi-linkedin', 'url' => '#', 'label' => 'LinkedIn'],
+			['icon' => 'bi-dribbble', 'url' => '#', 'label' => 'Dribbble'],
+			['icon' => 'bi-instagram', 'url' => '#', 'label' => 'Instagram'],
+			['icon' => 'bi-threads', 'url' => '#', 'label' => 'Threads'],
+			['icon' => 'bi-reddit', 'url' => '#', 'label' => 'Reddit'],
+		];
 
 		/** view params
 $canonicalUrl = $this->params['canonicalUrl'];
 $title = $this->params['title'];
+$themeName = $this->params['themeName'];
 $keywords = $this->params['keywords'];
 $description = $this->params['description'];
 $author = $this->params['author'];
 $updated = $this->params['updated'];
 $metaAssetUrl = $this->params['metaAssetUrl'];
 $pageAssetUrl = $this->params['pageAssetUrl'];
+$footerItems = $this->params['footerItems'];
+
+$location = $this->params['footerItems']['location'];
+$about = $this->params['footerItems']['about'];
+$socialLinks = $this->params['footerItems']['socialLinks'];
 		 */
 
 		// Render the specific view for freelancer
-		return $this->render('@frontend/modules/freelancer/views/site/index', [
-			'canonicalUrl' => rtrim(Yii::$app->homeUrl, '/') . '/',
-			'title' => Yii::$app->name,
-			'keywords' => Yii::$app->params['keywords'],
-			'description' => Yii::$app->params['description'],
-			'author' => Yii::$app->params['author'],
-			'updated' => Yii::$app->params['updated'],
-			'copyright' => Yii::$app->params['copyright'],
-			'metaAssetUrl' => $metaAsset->baseUrl,
-			'pageAssetUrl' => $pageAsset->baseUrl,
-		]);
+		return $this->render('@frontend/modules/freelancer/views/layouts/main');
 	}
 }
 
