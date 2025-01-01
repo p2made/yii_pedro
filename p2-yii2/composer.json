@@ -12,13 +12,14 @@
 		"irc": "ircs://irc.libera.chat:6697/yii",
 		"source": "https://github.com/yiisoft/yii2"
 	},
-	"minimum-stability": "stable",
+	"minimum-stability": "dev",
 	"require": {
 		"php": ">=7.4.0",
 		"yiisoft/yii2": "~2.0.45",
 		"yiisoft/yii2-bootstrap5": "~2.0.2",
 		"yiisoft/yii2-symfonymailer": "~2.0.3",
-		"kartik-v/yii2-markdown": "dev-master"
+		"kartik-v/yii2-markdown": "dev-master",
+		"p2made/p2y2-things": "dev-5.x-reboot"
 	},
 	"require-dev": {
 		"yiisoft/yii2-debug": "~2.1.0",
@@ -31,7 +32,8 @@
 		"codeception/module-yii2": "^1.1",
 		"codeception/module-filesystem": "^3.0 || ^2.0 || ^1.1",
 		"codeception/verify": "^3.0 || ^2.2",
-		"symfony/browser-kit": "^6.0 || >=2.7 <=4.2.4"
+		"symfony/browser-kit": "^6.0 || >=2.7 <=4.2.4",
+		"p2made/p2y2-things-demo": "dev-5.x-reboot"
 	},
 	"autoload-dev": {
 		"psr-4": {
@@ -53,6 +55,27 @@
 		{
 			"type": "composer",
 			"url": "https://asset-packagist.org"
+		},
+		{
+			"type": "path",
+			"url": "../../../Developer/Web/p2made/p2y2-base",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../../../Developer/Web/p2made/p2y2-things",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../../../Developer/Web/p2made/p2y2-things-demo",
+			"options": {
+				"symlink": true
+			}
 		}
 	]
 }
